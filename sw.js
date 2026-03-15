@@ -26,23 +26,16 @@ self.addEventListener("message", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  const request = event.request;
-  if (!cachingEnabled || request.method !== "GET") return;
-
-  const url = new URL(request.url);
+  const url = new URL(event.request.url);
   
-  // Don't cache Google Drive API streams - let them pass through
-  if (url.hostname === "www.googleapis.com" && url.pathname.startsWith("/drive/v3/files/")) {
-    return; // Skip caching for these
+  // Never intercept Google Drive API requests
+  if (url.hostname.includes("googleapis.com") || url.hostname.includes("drive.google.com")) {
+    return;
   }
-
-  // Only cache thumbnail and view requests from drive.google.com
-  const isDriveThumb = url.hostname === "drive.google.com" && url.pathname.includes("thumbnail");
-  const isDriveView = url.hostname === "drive.google.com" && url.searchParams.get("export") === "view";
-
-  if (isDriveThumb || isDriveView) {
-    event.respondWith(cacheFirst(request));
-  }
+  
+  // Normal caching for other resources
+  if (!cachingEnabled || event.request.method !== "GET") return;
+  event.respondWith(cacheFirst(event.request));
 });
 
 async function cacheFirst(request) {
@@ -51,7 +44,7 @@ async function cacheFirst(request) {
   if (cached) return cached;
 
   const response = await fetch(request);
-  if (response && (response.ok || response.type === "opaque")) {
+  if (response && response.ok) {
     cache.put(request, response.clone());
   }
   return response;
