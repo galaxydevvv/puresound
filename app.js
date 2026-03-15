@@ -1098,14 +1098,21 @@ function setVolume(percent, { fromUser = false } = {}) {
 
 function preloadInitialTracks(tracks, limit) {
   if (!Array.isArray(tracks) || !tracks.length) return;
-  const effectiveLimit = Number.isFinite(limit) ? limit : state.cacheEnabled ? 6 : 4;
+  const effectiveLimit = Number.isFinite(limit) ? limit : state.cacheEnabled ? 12 : 8;
   const slice = tracks.slice(0, effectiveLimit);
   slice.forEach((track) => {
     if (!track || preloadedTrackIds.has(track.id)) return;
     const audio = new Audio();
-    audio.preload = "auto";
+    audio.preload = "metadata";
     audio.crossOrigin = "anonymous";
     audio.src = track.streamUrl;
+    // Force buffering
+    audio.addEventListener('canplay', () => {
+      // Continue buffering
+      if (audio.readyState < 3) {
+        audio.play().then(() => audio.pause()).catch(() => {});
+      }
+    }, { once: true });
     audio.load();
     preloadedTrackIds.add(track.id);
   });
@@ -1118,6 +1125,22 @@ function preloadNextTrack() {
   const nextIndex = (state.currentTrackIndex + 1) % tracks.length;
   const nextTrack = tracks[nextIndex];
   if (!nextTrack || nextTrack.id === state.nextPreloadId) return;
+
+  const audio = new Audio();
+  audio.preload = "metadata";
+  audio.crossOrigin = "anonymous";
+  audio.src = nextTrack.streamUrl;
+  // Force buffering
+  audio.addEventListener('canplay', () => {
+    if (audio.readyState < 3) {
+      audio.play().then(() => audio.pause()).catch(() => {});
+    }
+  }, { once: true });
+  audio.load();
+
+  state.nextPreloadId = nextTrack.id;
+  state.nextPreloadAudio = audio;
+}
 
   const audio = new Audio();
   audio.preload = "auto";
