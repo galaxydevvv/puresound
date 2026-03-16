@@ -1,4 +1,4 @@
-﻿const DRIVE = {
+const DRIVE = {
   apiKey: "AIzaSyCTbkxG_W9T1uKaXK8f-FFBzngZrQ0YJ2Q",
   rootFolderId: "1eBXiNU5vMlK67JELspL6_QCVQBDSwDJ2",
 };
@@ -212,6 +212,7 @@ const dom = {
   currentTime: document.getElementById("currentTime"),
   duration: document.getElementById("duration"),
   volumeSlider: document.getElementById("volumeSlider"),
+  volumeIcon: document.getElementById("volumeIcon"),
   volumeValue: document.getElementById("volumeValue"),
   audio: document.getElementById("audio"),
   setup: document.getElementById("setup"),
@@ -1123,10 +1124,31 @@ function cycleRepeatMode() {
   setStatus(`${getRepeatLabel()}.`);
 }
 
+function updateVolumeIcon(percent) {
+  if (!dom.volumeIcon) return;
+  let level = "muted";
+  if (percent > 100) {
+    level = "boost";
+  } else if (percent > 35) {
+    level = "medium";
+  } else if (percent > 0) {
+    level = "low";
+  }
+  dom.volumeIcon.dataset.level = level;
+  dom.volumeIcon.title = level === "boost"
+    ? "Volume boosted"
+    : level === "medium"
+      ? "Volume high"
+      : level === "low"
+        ? "Volume low"
+        : "Muted";
+}
+
 function updateVolumeUi(percent) {
   if (dom.volumeValue) {
     dom.volumeValue.textContent = `${Math.round(percent)}%`;
   }
+  updateVolumeIcon(percent);
   if (dom.volumeSlider) {
     dom.volumeSlider.value = Math.round(percent).toString();
     const fill = Math.max(0, Math.min(100, (percent / VOLUME_MAX) * 100));
@@ -1851,5 +1873,7 @@ async function init() {
   }
 }
 init();
+
+
 
 
