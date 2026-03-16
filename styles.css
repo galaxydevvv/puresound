@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg-0: #0b0f14;
   --bg-1: #0f1a24;
   --bg-2: #172533;
@@ -838,8 +838,49 @@ h1 {
 }
 
 .volume-icon {
-  font-size: 0.85rem;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
   color: var(--muted);
+}
+
+.volume-icon .speaker-body {
+  fill: currentColor;
+}
+
+.volume-icon .wave-low,
+.volume-icon .wave-high,
+.volume-icon .mute-mark {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: none;
+}
+
+.volume-icon[data-level="low"] .wave-low,
+.volume-icon[data-level="medium"] .wave-low,
+.volume-icon[data-level="boost"] .wave-low {
+  display: block;
+}
+
+.volume-icon[data-level="medium"] .wave-high,
+.volume-icon[data-level="boost"] .wave-high {
+  display: block;
+}
+
+.volume-icon[data-level="muted"] .mute-mark {
+  display: block;
+}
+
+.volume-icon[data-level="medium"] {
+  color: var(--text);
+}
+
+.volume-icon[data-level="boost"] {
+  color: var(--accent-2);
+  filter: drop-shadow(0 0 8px rgba(42, 209, 197, 0.45));
 }
 
 .volume-value {
@@ -980,4 +1021,5 @@ h1 {
     max-width: 220px;
   }
 }
+
 
