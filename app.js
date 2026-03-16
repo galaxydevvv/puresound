@@ -7,7 +7,7 @@ const AUDIO_EXTENSIONS = [".mp3", ".m4a", ".wav", ".flac", ".ogg", ".aac", ".opu
 const NAME_SEPARATORS = [" - ", " | ", " : "];
 const COVER_NAMES = ["cover.jpg", "cover.jpeg", "cover.png"];
 const COVER_EXTENSIONS = [".jpg", ".jpeg", ".png"];
-const CACHE_VERSION = 2;
+const CACHE_VERSION = 3;
 const CACHE_TTL_MS = 10 * 60 * 1000;
 const CACHE_STORAGE_PREFIX = "puresound-cache";
 const DEFAULT_TITLE = "puresound - web player";
@@ -612,6 +612,8 @@ function resolveShortcut(file) {
     ...file,
     id: details.targetId,
     mimeType: details.targetMimeType || file.mimeType,
+    resourceKey: details.targetResourceKey || file.resourceKey || "",
+    webContentLink: "",
     shortcutId: file.id,
     isShortcut: true,
   };
@@ -712,17 +714,40 @@ function buildStreamUrl(fileId) {
   return `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&key=${DRIVE.apiKey}&supportsAllDrives=true&acknowledgeAbuse=true`;
 }
 
-function buildDownloadUrl(fileId) {
-  return `https://drive.google.com/uc?export=download&id=${fileId}`;
+function appendResourceKey(url, resourceKey = "") {
+  if (!url || !resourceKey) return url;
+  const next = new URL(url);
+  if (!next.searchParams.has("resourcekey")) {
+    next.searchParams.set("resourcekey", resourceKey);
+  }
+  return next.toString();
 }
 
-function buildOpenUrl(fileId) {
-  return `https://drive.google.com/uc?export=open&id=${fileId}`;
+function buildDownloadUrl(fileId, resourceKey = "") {
+  return appendResourceKey(`https://drive.google.com/uc?export=download&id=${fileId}`, resourceKey);
 }
 
-function buildStreamCandidates(fileId) {
-  const urls = [buildStreamUrl(fileId), buildOpenUrl(fileId), buildDownloadUrl(fileId)];
-  return Array.from(new Set(urls));
+function buildOpenUrl(fileId, resourceKey = "") {
+  return appendResourceKey(`https://drive.google.com/uc?export=open&id=${fileId}`, resourceKey);
+}
+
+function buildStreamCandidates(file) {
+  const fileId = typeof file === "string" ? file : file && file.id;
+  const resourceKey = typeof file === "object" && file ? file.resourceKey || "" : "";
+  const webContentLink = typeof file === "object" && file ? file.webContentLink || "" : "";
+  if (!fileId) return [];
+
+  const urls = [];
+  if (resourceKey && webContentLink) {
+    urls.push(webContentLink);
+  }
+  urls.push(buildStreamUrl(fileId));
+  if (webContentLink) {
+    urls.push(webContentLink);
+  }
+  urls.push(buildOpenUrl(fileId, resourceKey));
+  urls.push(buildDownloadUrl(fileId, resourceKey));
+  return Array.from(new Set(urls.filter(Boolean)));
 }
 
 function getNextStreamUrl() {
@@ -743,12 +768,12 @@ function setAudioSource(url) {
   dom.audio.load();
 }
 
-function buildCoverThumbUrl(fileId) {
-  return `https://drive.google.com/thumbnail?id=${fileId}&sz=w300`;
+function buildCoverThumbUrl(fileId, resourceKey = "") {
+  return appendResourceKey(`https://drive.google.com/thumbnail?id=${fileId}&sz=w300`, resourceKey);
 }
 
-function buildCoverViewUrl(fileId) {
-  return `https://drive.google.com/uc?export=view&id=${fileId}`;
+function buildCoverViewUrl(fileId, resourceKey = "") {
+  return appendResourceKey(`https://drive.google.com/uc?export=view&id=${fileId}`, resourceKey);
 }
 
 async function listFiles({ q, fields, orderBy }) {
@@ -1300,7 +1325,7 @@ async function loadTracksForAlbum(album, { silent = false } = {}) {
   try {
     const files = await listFiles({
       q: `'${album.id}' in parents and trashed=false and mimeType!='application/vnd.google-apps.folder'`,
-      fields: "id,name,mimeType,size,shortcutDetails(targetId,targetMimeType)",
+      fields: "id,name,mimeType,size,resourceKey,webContentLink,shortcutDetails(targetId,targetMimeType,targetResourceKey)",
     });
 
     const resolvedFiles = files.map(resolveShortcut);
@@ -1309,18 +1334,19 @@ async function loadTracksForAlbum(album, { silent = false } = {}) {
       const coverFile = pickCoverFile(resolvedFiles);
       if (coverFile) {
         album.coverId = coverFile.id;
-        album.coverUrl = buildCoverThumbUrl(coverFile.id);
+        album.coverUrl = buildCoverThumbUrl(coverFile.id, coverFile.resourceKey);
         album.coverFallbacks = [
-          buildCoverViewUrl(coverFile.id),
-          buildStreamUrl(coverFile.id),
-        ];
+          buildCoverViewUrl(coverFile.id, coverFile.resourceKey),
+          buildOpenUrl(coverFile.id, coverFile.resourceKey),
+          buildDownloadUrl(coverFile.id, coverFile.resourceKey),
+        ].filter(Boolean);
       }
     }
 
     const audioFiles = resolvedFiles.filter(isAudioFile).sort((a, b) => a.name.localeCompare(b.name));
     const tracks = audioFiles.map((file, index) => {
       const info = parseTrackInfo(file.name, album.artist);
-      const streamUrls = buildStreamCandidates(file.id);
+      const streamUrls = buildStreamCandidates(file);
       return {
         id: file.id,
         name: file.name,
@@ -1333,8 +1359,10 @@ async function loadTracksForAlbum(album, { silent = false } = {}) {
         coverUrl: album.coverUrl || "",
         coverFallbacks: album.coverFallbacks || [],
         index,
+        resourceKey: file.resourceKey || "",
+        webContentLink: file.webContentLink || "",
         streamUrl: streamUrls[0],
-        downloadUrl: buildDownloadUrl(file.id),
+        downloadUrl: buildDownloadUrl(file.id, file.resourceKey),
         streamUrls,
       };
     });
@@ -1873,6 +1901,7 @@ async function init() {
   }
 }
 init();
+
 
 
 
