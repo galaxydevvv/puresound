@@ -12,7 +12,7 @@
 the puresound libary is a huge libary of high quality music
 
 [https://galaxydev13yt.github.io/puresound/](https://galaxydev13yt.github.io/puresound/)
-v1.2
+build: v1.6.0
 
 **𝗖𝗥𝗘𝗗𝗜𝗧𝗦**
 
