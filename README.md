@@ -22,6 +22,8 @@ build: v1.6.0
 
 *All Individual tracks and albums featured are the property of their respective creators.*
 
+-------------------------------------------------------------------------------------------
+
 Copyright 2026 Puresound
 
 Licensed under the Apache License, Version 2.0 (the "License");
