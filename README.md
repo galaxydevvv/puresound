@@ -14,7 +14,7 @@ the puresound libary is a huge libary of pure lossless quality music
 [https://galaxydev13yt.github.io/puresound/](https://galaxydev13yt.github.io/puresound/)
 build: v1.6.0
 
-**𝗖𝗥𝗘𝗗𝗜𝗧𝗦**
+## Credits
 
 **GalaxyDev** - Site Creation and Scripter
 
