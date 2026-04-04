@@ -1,9 +1,9 @@
 {
-    "generatedAt":  "2026-04-04T04:26:32.8904020-05:00",
+    "generatedAt":  "2026-04-04T05:02:43.6548925-05:00",
     "rootFolderId":  "1eBXiNU5vMlK67JELspL6_QCVQBDSwDJ2",
     "rootItems":  [
                       {
-                          "id":  "1NbYxAMSBoI0En01tJ7ySiKY4y-YIP_Al",
+                          "id":  "1pxGiX7Ri2On0m5EVWqz1UrostRyu3q82",
                           "name":  "Master of Puppets (Remastered) - Metallica",
                           "mimeType":  "application/vnd.google-apps.folder"
                       },
@@ -169,19 +169,75 @@
                       }
                   ],
     "folderItems":  {
-                        "1NbYxAMSBoI0En01tJ7ySiKY4y-YIP_Al":  [
+                        "1pxGiX7Ri2On0m5EVWqz1UrostRyu3q82":  [
                                                                   {
-                                                                      "id":  "1oMLt4aZLzdgY3J5374_8FqJT_P-9703Q",
+                                                                      "id":  "1RegjRk0Nak5wOaTqV4YA6SgoX3O-Q2JX",
+                                                                      "name":  "08 - Metallica - Damage, Inc. (Remastered).flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1RegjRk0Nak5wOaTqV4YA6SgoX3O-Q2JX\u0026export=download",
+                                                                      "size":  "66657026"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1izE-KPiDKx5gDQ41Tquq8vR8qEthby45",
                                                                       "name":  "Master of Puppets (Remastered) - Metallica.m3u",
                                                                       "mimeType":  "audio/x-mpegurl",
-                                                                      "webContentLink":  "https://drive.google.com/uc?id=1oMLt4aZLzdgY3J5374_8FqJT_P-9703Q\u0026export=download",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1izE-KPiDKx5gDQ41Tquq8vR8qEthby45\u0026export=download",
                                                                       "size":  "933"
                                                                   },
                                                                   {
-                                                                      "id":  "14AbMtxiLADlJyqEwRE4s4eZKt-ElZBqO",
+                                                                      "id":  "1qSZYohc5A_DRYlIK1R_sZzuELjc9en-a",
+                                                                      "name":  "07 - Metallica - Orion (Remastered).flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1qSZYohc5A_DRYlIK1R_sZzuELjc9en-a\u0026export=download",
+                                                                      "size":  "59305948"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1pL20hLmLdwES45h3nP8LQBwkSa08CiYS",
+                                                                      "name":  "06 - Metallica - Leper Messiah (Remastered).flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1pL20hLmLdwES45h3nP8LQBwkSa08CiYS\u0026export=download",
+                                                                      "size":  "74935641"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1STcJmJPH2CqNsZkHjmq_8quI7siaXUow",
+                                                                      "name":  "05 - Metallica - Disposable Heroes (Remastered).flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1STcJmJPH2CqNsZkHjmq_8quI7siaXUow\u0026export=download",
+                                                                      "size":  "108626902"
+                                                                  },
+                                                                  {
+                                                                      "id":  "13d8zYaVzP_gBDLL4MPJeNT4AoF52BsWO",
+                                                                      "name":  "04 - Metallica - Welcome Home (Sanitarium) [Remastered].flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=13d8zYaVzP_gBDLL4MPJeNT4AoF52BsWO\u0026export=download",
+                                                                      "size":  "46395022"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1oEfb8U87u9Qt2ljOe1cCyuEA8P998x_r",
+                                                                      "name":  "03 - Metallica - The Thing That Should Not Be (Remastered).flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1oEfb8U87u9Qt2ljOe1cCyuEA8P998x_r\u0026export=download",
+                                                                      "size":  "83042616"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1vewWN-E5sqr6bQHv6TAZlrSB64tIcOdF",
+                                                                      "name":  "02 - Metallica - Master of Puppets (Remastered).flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1vewWN-E5sqr6bQHv6TAZlrSB64tIcOdF\u0026export=download",
+                                                                      "size":  "107851870"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1iu4Pj8T7ohDyn3XNH-3u1AsrxpIY0Jj-",
+                                                                      "name":  "01 - Metallica - Battery (Remastered).flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1iu4Pj8T7ohDyn3XNH-3u1AsrxpIY0Jj-\u0026export=download",
+                                                                      "size":  "38362712"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1ZrY1j5-QuQT1a2KRkEJLJT8KTYFxHx-e",
                                                                       "name":  "cover.jpg",
                                                                       "mimeType":  "image/jpeg",
-                                                                      "webContentLink":  "https://drive.google.com/uc?id=14AbMtxiLADlJyqEwRE4s4eZKt-ElZBqO\u0026export=download",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1ZrY1j5-QuQT1a2KRkEJLJT8KTYFxHx-e\u0026export=download",
                                                                       "size":  "417168"
                                                                   }
                                                               ],
