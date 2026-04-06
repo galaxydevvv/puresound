@@ -1,7 +1,27 @@
 {
-    "generatedAt":  "2026-04-04T23:31:02.1257196-05:00",
+    "generatedAt":  "2026-04-05T20:07:03.0499762-05:00",
     "rootFolderId":  "1eBXiNU5vMlK67JELspL6_QCVQBDSwDJ2",
     "rootItems":  [
+                      {
+                          "id":  "1Q8sz7MM31haym8R5jYour626nxH-nKpz",
+                          "name":  "Weezer - Make Believe",
+                          "mimeType":  "application/vnd.google-apps.folder"
+                      },
+                      {
+                          "id":  "1FOwursNqmT-87ZNbWx2uHcenwaYJHFjg",
+                          "name":  "Nirvana - In Utero",
+                          "mimeType":  "application/vnd.google-apps.folder"
+                      },
+                      {
+                          "id":  "1kyXmatcCz2Ja11c2FUQp9jT5tdg-JR2t",
+                          "name":  "Foo Fighters - The Colour And The Shape",
+                          "mimeType":  "application/vnd.google-apps.folder"
+                      },
+                      {
+                          "id":  "1YVn9811MkYDF3G6nidgVxsbzRgsyWIIF",
+                          "name":  "Foo Fighters - Asking For A Friend",
+                          "mimeType":  "application/vnd.google-apps.folder"
+                      },
                       {
                           "id":  "1nsdhNRnnHPOdHzFsneJoP5PEvIYpkynL",
                           "name":  "The Strokes - Room On Fire",
@@ -209,6 +229,336 @@
                       }
                   ],
     "folderItems":  {
+                        "1Q8sz7MM31haym8R5jYour626nxH-nKpz":  [
+                                                                  {
+                                                                      "id":  "1vnuaUC8NtU9HTJmCShOSy_3-VzAS6HMg",
+                                                                      "name":  "08 - Weezer - Pardon Me.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1vnuaUC8NtU9HTJmCShOSy_3-VzAS6HMg\u0026export=download",
+                                                                      "size":  "33798544"
+                                                                  },
+                                                                  {
+                                                                      "id":  "15mJhQvEkr6GGRR4lQ5PyGqAcA_dRO5AS",
+                                                                      "name":  "10 - Weezer - The Other Way.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=15mJhQvEkr6GGRR4lQ5PyGqAcA_dRO5AS\u0026export=download",
+                                                                      "size":  "25276701"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1iKUsfoJY65Va3deEyBgBSmlSP9U-E45Z",
+                                                                      "name":  "11 - Weezer - Freak Me Out.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1iKUsfoJY65Va3deEyBgBSmlSP9U-E45Z\u0026export=download",
+                                                                      "size":  "23071306"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1matJnOvMflSLIbD_P0MvLaSoLgNYRY5d",
+                                                                      "name":  "09 - Weezer - My Best Friend.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1matJnOvMflSLIbD_P0MvLaSoLgNYRY5d\u0026export=download",
+                                                                      "size":  "24748656"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1o30Qe2TMgLF8bMbrM3fksen0Y39Bf3AV",
+                                                                      "name":  "12 - Weezer - Haunt You Every Day.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1o30Qe2TMgLF8bMbrM3fksen0Y39Bf3AV\u0026export=download",
+                                                                      "size":  "33169125"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1MJ12ec0PB9yRW55a6KtrCE8rKXbQz1q1",
+                                                                      "name":  "Make Believe - Weezer.m3u",
+                                                                      "mimeType":  "audio/x-mpegurl",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1MJ12ec0PB9yRW55a6KtrCE8rKXbQz1q1\u0026export=download",
+                                                                      "size":  "922"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1jONIXhT3zdyBAiEh6Ae96uXB497I5Zcp",
+                                                                      "name":  "04 - Weezer - Hold Me.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1jONIXhT3zdyBAiEh6Ae96uXB497I5Zcp\u0026export=download",
+                                                                      "size":  "29567658"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1GvCQlsiRW5Ih-9wvnpNJsXLrdzbCNS8-",
+                                                                      "name":  "05 - Weezer - Peace.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1GvCQlsiRW5Ih-9wvnpNJsXLrdzbCNS8-\u0026export=download",
+                                                                      "size":  "29724609"
+                                                                  },
+                                                                  {
+                                                                      "id":  "19oY89ah6upTPV83a6oE5fOF-AWos93hI",
+                                                                      "name":  "03 - Weezer - This Is Such A Pity.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=19oY89ah6upTPV83a6oE5fOF-AWos93hI\u0026export=download",
+                                                                      "size":  "28360514"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1JoIVX5epRH7uJOqIi6_FqmFJHwit-Ec4",
+                                                                      "name":  "06 - Weezer - We Are All On Drugs.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1JoIVX5epRH7uJOqIi6_FqmFJHwit-Ec4\u0026export=download",
+                                                                      "size":  "28368257"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1LQPaRpJ1rvIxjFlKNYtks_iYw5UZVZIF",
+                                                                      "name":  "07 - Weezer - The Damage In Your Heart.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1LQPaRpJ1rvIxjFlKNYtks_iYw5UZVZIF\u0026export=download",
+                                                                      "size":  "30130050"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1v5cZEr1_BC0Fludv7H27UbzGs2QgH3UE",
+                                                                      "name":  "01 - Weezer - Beverly Hills.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1v5cZEr1_BC0Fludv7H27UbzGs2QgH3UE\u0026export=download",
+                                                                      "size":  "25217925"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1hKVfurw22Eaqo_YBGMI0AKYwDHUdRvkF",
+                                                                      "name":  "02 - Weezer - Perfect Situation.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1hKVfurw22Eaqo_YBGMI0AKYwDHUdRvkF\u0026export=download",
+                                                                      "size":  "32063761"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1bmErEHsgyzTfcTetEOs5DHdQuHVaN2Ag",
+                                                                      "name":  "cover.jpg",
+                                                                      "mimeType":  "image/jpeg",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1bmErEHsgyzTfcTetEOs5DHdQuHVaN2Ag\u0026export=download",
+                                                                      "size":  "436624"
+                                                                  }
+                                                              ],
+                        "1FOwursNqmT-87ZNbWx2uHcenwaYJHFjg":  [
+                                                                  {
+                                                                      "id":  "1DRg2wHB_CWw0qUYf-IXT0nsOnnK6yh-P",
+                                                                      "name":  "In Utero - Nirvana.m3u",
+                                                                      "mimeType":  "audio/x-mpegurl",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1DRg2wHB_CWw0qUYf-IXT0nsOnnK6yh-P\u0026export=download",
+                                                                      "size":  "982"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1sUzEmOiCUV0e5UjVASjyvaYxzJGBZZrl",
+                                                                      "name":  "12 - Nirvana - All Apologies.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1sUzEmOiCUV0e5UjVASjyvaYxzJGBZZrl\u0026export=download",
+                                                                      "size":  "84746361"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1zwNVMZCo52o1-l6VKEl7aoiiLtvwkiVz",
+                                                                      "name":  "10 - Nirvana - Radio Friendly Unit Shifter.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1zwNVMZCo52o1-l6VKEl7aoiiLtvwkiVz\u0026export=download",
+                                                                      "size":  "106528667"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1dr5aY6CwQIt1yt2v7WKNevzscBj_ZM98",
+                                                                      "name":  "11 - Nirvana - Tourette\u0027s.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1dr5aY6CwQIt1yt2v7WKNevzscBj_ZM98\u0026export=download",
+                                                                      "size":  "34648965"
+                                                                  },
+                                                                  {
+                                                                      "id":  "19IbL3uQ4AtaDIdVx4f2MzxKDCpN_8nEL",
+                                                                      "name":  "08 - Nirvana - Milk It.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=19IbL3uQ4AtaDIdVx4f2MzxKDCpN_8nEL\u0026export=download",
+                                                                      "size":  "84189324"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1yKLyo0KnlNTr6DLHOnqRhOItyBp7y0kN",
+                                                                      "name":  "09 - Nirvana - Pennyroyal Tea.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1yKLyo0KnlNTr6DLHOnqRhOItyBp7y0kN\u0026export=download",
+                                                                      "size":  "78287506"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1En7re2GU3H5_hn5_qGxe0_R49RIJv4IO",
+                                                                      "name":  "06 - Nirvana - Dumb.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1En7re2GU3H5_hn5_qGxe0_R49RIJv4IO\u0026export=download",
+                                                                      "size":  "54202940"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1sqlLv3kx4XxCrZms-jLrK07oAIU5oz6u",
+                                                                      "name":  "05 - Nirvana - Frances Farmer Will Have Her Revenge On Seattle.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1sqlLv3kx4XxCrZms-jLrK07oAIU5oz6u\u0026export=download",
+                                                                      "size":  "91905470"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1O5wTQ3wvWEeZGqIl_tVrNy0BOh3XKb1I",
+                                                                      "name":  "07 - Nirvana - Very Ape.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1O5wTQ3wvWEeZGqIl_tVrNy0BOh3XKb1I\u0026export=download",
+                                                                      "size":  "42897388"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1sdQQ14HynNrmvXvOL-2BJaTwmIqhxprb",
+                                                                      "name":  "04 - Nirvana - Rape Me.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1sdQQ14HynNrmvXvOL-2BJaTwmIqhxprb\u0026export=download",
+                                                                      "size":  "61227432"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1PR4Rt8IJ6yrVdWBpRzZ1V5a9jXOWXQBQ",
+                                                                      "name":  "03 - Nirvana - Heart-Shaped Box.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1PR4Rt8IJ6yrVdWBpRzZ1V5a9jXOWXQBQ\u0026export=download",
+                                                                      "size":  "102838027"
+                                                                  },
+                                                                  {
+                                                                      "id":  "16vPHY50SjeWYZS4a1NvekA-1-qO-G2S0",
+                                                                      "name":  "02 - Nirvana - Scentless Apprentice.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=16vPHY50SjeWYZS4a1NvekA-1-qO-G2S0\u0026export=download",
+                                                                      "size":  "87516025"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1iQ35_AGhxT8WARECBD5AhC3dMwVumJ51",
+                                                                      "name":  "cover.jpg",
+                                                                      "mimeType":  "image/jpeg",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1iQ35_AGhxT8WARECBD5AhC3dMwVumJ51\u0026export=download",
+                                                                      "size":  "243824"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1ZPJ96KAdXm4PZ3iKtHqCUvfh2JWgY8o3",
+                                                                      "name":  "01 - Nirvana - Serve The Servants.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1ZPJ96KAdXm4PZ3iKtHqCUvfh2JWgY8o3\u0026export=download",
+                                                                      "size":  "81119666"
+                                                                  }
+                                                              ],
+                        "1kyXmatcCz2Ja11c2FUQp9jT5tdg-JR2t":  [
+                                                                  {
+                                                                      "id":  "1tf6smfpYjzpAdD0o5fTElJbehw4kslfc",
+                                                                      "name":  "The Colour And The Shape - Foo Fighters.m3u",
+                                                                      "mimeType":  "audio/x-mpegurl",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1tf6smfpYjzpAdD0o5fTElJbehw4kslfc\u0026export=download",
+                                                                      "size":  "1181"
+                                                                  },
+                                                                  {
+                                                                      "id":  "17LCMpyuo_1DtJm9Ig-Vsm2NL8Rz0VbI4",
+                                                                      "name":  "14 - Foo Fighters - The Colour And The Shape.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=17LCMpyuo_1DtJm9Ig-Vsm2NL8Rz0VbI4\u0026export=download",
+                                                                      "size":  "27046872"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1D4HnS_1RRvaQPsn93VntjgqNR4l0IX0X",
+                                                                      "name":  "10 - Foo Fighters - February Stars.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1D4HnS_1RRvaQPsn93VntjgqNR4l0IX0X\u0026export=download",
+                                                                      "size":  "31545826"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1BpkPVQpTHxpu79WA7jFBH-orpl4-cRue",
+                                                                      "name":  "11 - Foo Fighters - Everlong.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1BpkPVQpTHxpu79WA7jFBH-orpl4-cRue\u0026export=download",
+                                                                      "size":  "31505808"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1vR8PXXl0ODZy2rTb3Lo92FKPILHKuER-",
+                                                                      "name":  "12 - Foo Fighters - Walking After You.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1vR8PXXl0ODZy2rTb3Lo92FKPILHKuER-\u0026export=download",
+                                                                      "size":  "33343316"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1Lqw1_M2jevPXAzI41si9m8vBqv-YEsv8",
+                                                                      "name":  "13 - Foo Fighters - New Way Home.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1Lqw1_M2jevPXAzI41si9m8vBqv-YEsv8\u0026export=download",
+                                                                      "size":  "40748461"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1r1LxCNLVLplBgZEpX7IVZ2dm4uCfxxV8",
+                                                                      "name":  "07 - Foo Fighters - My Hero.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1r1LxCNLVLplBgZEpX7IVZ2dm4uCfxxV8\u0026export=download",
+                                                                      "size":  "32129091"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1At2V3zsnAHH_bef1dQq5gQZQ5bKjgGut",
+                                                                      "name":  "04 - Foo Fighters - My Poor Brain.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1At2V3zsnAHH_bef1dQq5gQZQ5bKjgGut\u0026export=download",
+                                                                      "size":  "28776877"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1baZVRFtW37LS3TxckQPDVJPuh1puazYj",
+                                                                      "name":  "05 - Foo Fighters - Wind Up.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1baZVRFtW37LS3TxckQPDVJPuh1puazYj\u0026export=download",
+                                                                      "size":  "20298578"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1aiX1O8CWjxRRrZHET0w3naxGFywnq7cL",
+                                                                      "name":  "08 - Foo Fighters - See You.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1aiX1O8CWjxRRrZHET0w3naxGFywnq7cL\u0026export=download",
+                                                                      "size":  "18858150"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1hE561WqNh0mAIrqSUp3ojc-HZjS51WjX",
+                                                                      "name":  "06 - Foo Fighters - Up In Arms.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1hE561WqNh0mAIrqSUp3ojc-HZjS51WjX\u0026export=download",
+                                                                      "size":  "17237579"
+                                                                  },
+                                                                  {
+                                                                      "id":  "19hVvPZSWTgfboEo8drYg5QIimicHI1I1",
+                                                                      "name":  "03 - Foo Fighters - Hey, Johnny Park!.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=19hVvPZSWTgfboEo8drYg5QIimicHI1I1\u0026export=download",
+                                                                      "size":  "31022109"
+                                                                  },
+                                                                  {
+                                                                      "id":  "19Mih87srpL4pKtM74NiL0UDYLi7fBHok",
+                                                                      "name":  "09 - Foo Fighters - Enough Space.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=19Mih87srpL4pKtM74NiL0UDYLi7fBHok\u0026export=download",
+                                                                      "size":  "19789546"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1ja9-F6M0uXNtSZcvh9tz9D17TW0olmUu",
+                                                                      "name":  "cover.jpg",
+                                                                      "mimeType":  "image/jpeg",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1ja9-F6M0uXNtSZcvh9tz9D17TW0olmUu\u0026export=download",
+                                                                      "size":  "90651"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1o78XY1BiisMI8j_ZAn3JPeQuJ3RI-DhG",
+                                                                      "name":  "01 - Foo Fighters - Doll.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1o78XY1BiisMI8j_ZAn3JPeQuJ3RI-DhG\u0026export=download",
+                                                                      "size":  "7868346"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1WtUGOeb4HVB5Gcthk7ybXyiYoRaxthg3",
+                                                                      "name":  "02 - Foo Fighters - Monkey Wrench.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1WtUGOeb4HVB5Gcthk7ybXyiYoRaxthg3\u0026export=download",
+                                                                      "size":  "31111865"
+                                                                  }
+                                                              ],
+                        "1YVn9811MkYDF3G6nidgVxsbzRgsyWIIF":  [
+                                                                  {
+                                                                      "id":  "1C0McwH1Ldfr7NhFeJLlUU8ATxCHoam_b",
+                                                                      "name":  "320x320.jpg",
+                                                                      "mimeType":  "image/jpeg",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1C0McwH1Ldfr7NhFeJLlUU8ATxCHoam_b\u0026export=download",
+                                                                      "size":  "41020"
+                                                                  },
+                                                                  {
+                                                                      "id":  "1ReQ3nRkgV7kxyigpd18ZPdpqd8YRkSED",
+                                                                      "name":  "01 - Foo Fighters - Asking For A Friend.flac",
+                                                                      "mimeType":  "audio/flac",
+                                                                      "webContentLink":  "https://drive.google.com/uc?id=1ReQ3nRkgV7kxyigpd18ZPdpqd8YRkSED\u0026export=download",
+                                                                      "size":  "64434567"
+                                                                  }
+                                                              ],
                         "1nsdhNRnnHPOdHzFsneJoP5PEvIYpkynL":  [
                                                                   {
                                                                       "id":  "1kONxPxMom-O9__8RWQqtX1XzH-mqSXz6",
