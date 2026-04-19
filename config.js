@@ -11,8 +11,8 @@ window.PURESOUND_CONFIG = {
     apiKey: "AIzaSyCTbkxG_W9T1uKaXK8f-FFBzngZrQ0YJ2Q",
   },
   supabase: {
-    url: "",
-    anonKey: "",
+    url: "https://ktgijoipnriadfwcnvyd.supabase.co",
+    anonKey: "sb_publishable_WpyTJD6mui8TO6AGh7l56A_gyhm4_nt",
     redirectTo: "https://galaxydevvv.github.io/puresound/",
   },
 };
